@@ -31,3 +31,5 @@ export NEWT_COLORS='
   helpline=#a9b1d6,#1a1b26
   roottext=#7aa2f7,#1a1b26
 '
+
+export PATH=$PATH:$HOME/.npm-global/bin
