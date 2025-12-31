@@ -1,0 +1,212 @@
+/* =========================
+   Tokyo Night GTK3 – CLEAN FLAT
+   ========================= */
+
+/* ===== Colors ===== */
+@define-color bg_color #1a1b26;
+@define-color fg_color #c6d0f5;
+@define-color base_color #1a1b26;
+@define-color text_color #c6d0f5;
+
+@define-color selected_bg_color #99d1db;
+@define-color selected_fg_color #1a1b26;
+
+@define-color tooltip_bg_color #24283b;
+@define-color tooltip_fg_color #c6d0f5;
+
+@define-color border_color #414868;
+@define-color hover_bg_color #292e42;
+@define-color active_bg_color #3b4261;
+
+/* =========================
+   Global reset (REQUIRED)
+   ========================= */
+* {
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+  -gtk-icon-shadow: none;
+  outline: none;
+  border-image: none;
+}
+
+/* =========================
+   Base containers
+   ========================= */
+window,
+dialog {
+  background-color: @bg_color;
+  color: @fg_color;
+}
+
+box,
+grid,
+viewport {
+  background-color: transparent;
+}
+
+/* =========================
+   Headerbars & toolbars
+   ========================= */
+headerbar,
+menubar,
+toolbar,
+.primary-toolbar,
+.action-bar,
+searchbar,
+revealer {
+  background-color: #16161e;
+  border-bottom: 1px solid @border_color;
+}
+
+toolbar:backdrop,
+.primary-toolbar:backdrop,
+.action-bar:backdrop {
+  background-color: #16161e;
+}
+
+/* =========================
+   Inputs & views
+   ========================= */
+entry,
+textview,
+treeview,
+list {
+  background-color: @base_color;
+  color: @text_color;
+  border: 1px solid @border_color;
+}
+
+entry:focus,
+textview:focus {
+  border-color: @selected_bg_color;
+}
+
+/* =========================
+   Buttons (single source of truth)
+   ========================= */
+button {
+  background-color: @hover_bg_color;
+  color: @fg_color;
+  border: 1px solid @border_color;
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+button:hover {
+  background-color: @active_bg_color;
+}
+
+button:active,
+button:checked {
+  background-color: #565f89;
+}
+
+button:disabled {
+  background-color: #16161e;
+  color: #565f89;
+}
+
+/* Toolbar buttons inherit EXACT same style */
+toolbar button,
+.primary-toolbar button,
+.action-bar button {
+  background-color: @hover_bg_color;
+}
+
+/* =========================
+   Suggested / destructive
+   ========================= */
+button.suggested-action {
+  background-color: #7aa2f7;
+  color: #1a1b26;
+  border-color: #7aa2f7;
+}
+
+button.suggested-action:hover {
+  background-color: #89b4fa;
+}
+
+button.destructive-action {
+  background-color: #f7768e;
+  color: #1a1b26;
+  border-color: #f7768e;
+}
+
+/* =========================
+   Icon & linked buttons
+   ========================= */
+button.image-button {
+  padding: 6px;
+  min-width: 32px;
+  min-height: 32px;
+}
+
+.linked button {
+  border-radius: 0;
+}
+
+.linked button:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.linked button:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* =========================
+   Menus & popovers
+   ========================= */
+menu,
+.menu,
+.context-menu,
+popover,
+popover.background {
+  background-color: #16161e;
+  color: @fg_color;
+  border: 1px solid @border_color;
+}
+
+menuitem {
+  padding: 6px 12px;
+}
+
+menuitem:hover {
+  background-color: @hover_bg_color;
+}
+
+menuitem:disabled {
+  color: #565f89;
+}
+
+/* =========================
+   Selection
+   ========================= */
+*:selected {
+  background-color: @selected_bg_color;
+  color: @selected_fg_color;
+}
+
+/* =========================
+   Tooltips
+   ========================= */
+tooltip {
+  background-color: @tooltip_bg_color;
+  color: @tooltip_fg_color;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+/* =========================
+   Scrollbars
+   ========================= */
+scrollbar slider {
+  background-color: @active_bg_color;
+  border-radius: 6px;
+}
+
+scrollbar slider:hover {
+  background-color: @selected_bg_color;
+}

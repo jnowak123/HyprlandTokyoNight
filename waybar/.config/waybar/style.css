@@ -1,0 +1,62 @@
+@define-color bg     #1a1b26;
+@define-color blue   #7aa2f7;
+@define-color fg     #c0caf5;
+@define-color red    #f7768e;
+@define-color yellow #e0af68;
+
+* {
+    font-family: "FiraCode Nerd Font";
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background-color: @bg;
+}
+
+#workspaces {
+    margin: 2px 5px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: @fg;
+    background: transparent;
+}
+
+#workspaces button.active {
+    color: @blue;
+}
+
+#clock {
+    color: @fg;
+    background: transparent;
+}
+
+#bluetooth, #network, #pulseaudio, #battery {
+    padding: 0 10px;
+    color: @fg;
+}
+
+#bluetooth {
+    padding-left: 10px;
+    padding-right: 5px; /* Decreased padding on the right */
+    color: @fg;
+}
+
+#network.disconnected {
+    color: @red;
+}
+
+#pulseaudio.muted {
+    color: @red;
+}
+
+#battery.warning {
+    color: @yellow;
+}
+
+#battery.critical {
+    color: @red;
+}

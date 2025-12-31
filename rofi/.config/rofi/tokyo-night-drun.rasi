@@ -1,0 +1,99 @@
+/***** --- TOKYO NIGHT DRUN LAUNCHER (MATCHED) --- *****/
+
+configuration {
+    modi: "drun";
+    show-icons: true;
+    display-drun: "󰄛";
+    drun-display-format: "{name}";
+}
+
+
+* {
+    /* Perfectly matched hex codes */
+    bg: #1a1b26;
+    fg: #a9b1d6;
+    accent: #7aa2f7;      
+    select-bg: #414868;   
+    comment: #565f89;     
+    
+    background-color: transparent;
+    text-color: @fg;
+    font: "FiraCode Nerd Font 12";
+}
+
+window {
+    width: 500px;         /* Narrower for single column */
+    background-color: @bg;
+    border: 2px;
+    border-color: @accent;
+    border-radius: 12px;
+    location: center;
+    anchor: center;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    padding: 20px;
+    spacing: 15px;
+}
+
+/* --- SEARCH BAR --- */
+inputbar {
+    enabled: true;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: @select-bg;
+    children: [ entry ];
+}
+
+entry {
+    placeholder: "  Search Applications...";
+    placeholder-color: @comment;
+    horizontal-align: 0;
+}
+
+/* --- APP LIST --- */
+listview {
+    columns: 1;
+    lines: 8;
+    cycle: false;
+    dynamic: true;
+    layout: vertical;
+    
+    scrollbar: true;
+    scrollbar-width: 6px;
+    fixed-height: false;
+    fixed-columns: true;
+}
+
+/* --- SCROLLBAR STYLING --- */
+scrollbar {
+    handle-width: 4px;
+    handle-color: @accent;
+    background-color: @select-bg;
+    border-radius: 10px;
+    margin: 0px 0px 0px 5px;
+}
+
+element {
+    padding: 10px;
+    border-radius: 8px;
+    spacing: 15px;
+    children: [ element-icon, element-text ];
+}
+
+element selected {
+    background-color: @select-bg;
+    text-color: @accent;
+}
+
+element-icon {
+    size: 32px;
+    cursor: inherit;
+}
+
+element-text {
+    vertical-align: 0.5;
+    cursor: inherit;
+    text-color: inherit;
+}

@@ -1,0 +1,71 @@
+/***** --- TOKYO NIGHT POWER MENU --- *****/
+
+* {
+    bg: #1a1b26;
+    fg: #a9b1d6;
+    accent: #7aa2f7;      
+    select-bg: #414868;   
+    comment: #565f89;     
+    
+    background-color: transparent;
+    text-color: @fg;
+    font: "FiraCode Nerd Font 12";
+}
+
+window {
+    width: 300px;
+    background-color: @bg;
+    border: 2px;
+    border-color: @accent;
+    border-radius: 12px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    padding: 15px;
+    spacing: 15px;
+}
+
+/* --- THE SEARCH BAR --- */
+inputbar {
+    enabled: true;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: @select-bg;
+    text-color: @fg;
+    children: [ entry ]; 
+}
+
+entry {
+    enabled: true;
+    placeholder: "  Type to filter...";
+    placeholder-color: @comment;
+}
+
+/* --- THE LIST --- */
+listview {
+    columns: 1;
+    lines: 7;         /* Set this to the number of options you have */
+    spacing: 5px;
+    cycle: true;
+    dynamic: true;
+    fixed-height: false; 
+}
+
+element {
+    padding: 10px;
+    border-radius: 8px;
+    spacing: 15px;
+}
+
+element selected {
+    background-color: @select-bg;
+    text-color: @accent;
+}
+
+element-text {
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+    cursor: inherit;
+    text-color: inherit;
+}

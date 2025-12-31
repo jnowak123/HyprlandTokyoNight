@@ -1,0 +1,73 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 28,
+    "spacing": 0,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["bluetooth", "network", "pulseaudio", "battery"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "active": "",
+            "default": "",
+            "empty": ""
+        },
+        "persistent-workspaces": {
+            "*": 5
+        }
+    },
+
+    "clock": {
+        "format": "{:%A %d/%m/%y %H:%M}"
+    },
+
+"bluetooth": {
+    "format": "{icon}",
+    "format-on": "{icon}",
+    "format-off": "{icon}", 
+    "format-connected": "{icon}",
+    "format-icons": {
+        "on": "󰂯",
+        "off": "󰂲",
+        "connected": "󰂱"
+    },
+    "on-click": "hyprctl dispatch exec '[float; size 700 600; center] kitty bluetui'",
+    "tooltip-format-connected": "{device_enumerate}"
+},
+
+    "network": {
+        "format-wifi": "󰤢",
+        "format-ethernet": "󰈀 ",
+        "format-disconnected": "󰤠 ",
+        "interval": 5,
+        "tooltip-format": "{essid} ({signalStrength}%)",
+        "on-click": "hyprctl dispatch exec '[float; size 700 600; center] kitty nmtui-tokyo'"
+    },
+
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": "",
+        "format-icons": {
+            "default": ["", "", " "]
+        },
+        "on-click": "hyprctl dispatch exec [float] pavucontrol"
+    },
+
+    "battery": {
+        "interval": 2,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        "format-full": "{icon}  {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-icons": ["", "", "", "", ""]
+    }
+}

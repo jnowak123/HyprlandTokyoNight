@@ -1,0 +1,24 @@
+{
+  "logo": {
+    "type": "file",
+    "source": "~/.config/fastfetch/logo.txt"
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "resolution",
+    "de",
+    "wm",
+    "cpu",
+    "gpu",
+    "memory",
+    "break", // Adds a blank line for spacing
+    "colors" // This shows the color blocks
+  ]
+}

@@ -1,0 +1,51 @@
+/* TOKYO NIGHT OVERRIDES */
+
+/* 1. Global Variables for Libadwaita */
+@define-color window_bg_color #1a1b26;
+@define-color window_fg_color #a9b1d6;
+@define-color view_bg_color #24283b;
+@define-color view_fg_color #c0caf5;
+@define-color headerbar_bg_color #1a1b26;
+@define-color headerbar_fg_color #a9b1d6;
+@define-color sidebar_bg_color #1a1b26;
+@define-color sidebar_fg_color #a9b1d6;
+@define-color card_bg_color #24283b;
+
+/* 2. Target the Sidebar Container (The modern Adw way) */
+splitview > sidebar > navigationview > navigationpage,
+splitview > sidebar bin,
+splitview > sidebar,
+navigation-sidebar,
+.navigation-sidebar {
+    background-color: #1a1b26 !important;
+}
+
+/* 3. Target the Sidebar List (Items) */
+navigation-sidebar list,
+navigation-sidebar row {
+    background-color: transparent !important;
+    color: #a9b1d6 !important;
+}
+
+/* 4. Target the Main Window and View */
+window.nautilus-window,
+.nautilus-window .view,
+.nautilus-list-view,
+.nautilus-grid-view {
+    background-color: #24283b !important;
+    color: #c0caf5 !important;
+}
+
+/* 5. Headerbar and Toolbar styling */
+headerbar,
+.header-bar {
+    background-color: #24283b !important;
+    border-bottom: 1px solid #15161e !important;
+}
+
+/* 6. Active Sidebar Item selection */
+navigation-sidebar row:selected {
+    background-color: rgba(122, 162, 247, 0.2) !important;
+    color: #7aa2f7 !important;
+    font-weight: bold;
+}
