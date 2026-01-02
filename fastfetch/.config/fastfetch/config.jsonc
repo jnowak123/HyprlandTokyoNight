@@ -4,6 +4,7 @@
     "source": "~/.config/fastfetch/logo.txt"
   },
   "modules": [
+    "break",
     "title",
     "separator",
     "os",
@@ -18,7 +19,10 @@
     "cpu",
     "gpu",
     "memory",
-    "break", // Adds a blank line for spacing
-    "colors" // This shows the color blocks
+    "disk",
+    "display",
+    "break",
+    "break",
+    "colors"
   ]
 }
