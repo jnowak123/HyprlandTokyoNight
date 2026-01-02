@@ -41,11 +41,14 @@ stow */
 |---|---|
 | Background | #1a1b26 |
 | Foreground | #a9b1d6 |
-| Primary Blue | #7aa2f7 |
-| Secondary Purple | #bb9af7 |
+| Black | #414868 |
+| Red | #f7768e |
 | Green | #73daca |
 | Yellow | #e0af68 |
-| Red | #f7768e |
+| Blue | #7aa2f7 |
+| Purple | #bb9af7 |
+| Cyan | #7dcfff |
+| White | #c0caf5 |
 
 ---
 
