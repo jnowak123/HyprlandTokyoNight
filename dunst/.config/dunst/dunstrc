@@ -3,16 +3,11 @@
     monitor = 0
     follow = mouse
     
-    # New height syntax: (min_height, max_height)
-    # (0, 300) mimics the old behavior of dynamic height up to 300px
+    ### Notification ###
     width = 300
     height = (0, 300)
-    
     origin = top-right
-    
-    # New offset syntax: (horizontal, vertical)
-    offset = (10, 10)
-    
+    offset = (10, 10)   
     scale = 0
     notification_limit = 5
 
@@ -22,6 +17,8 @@
     progress_bar_frame_width = 1
     progress_bar_min_width = 150
     progress_bar_max_width = 300
+    progress_bar_corner_radius = 5
+    highlight = "#7aa2f7"
 
     ### Text ###
     font = FiraCode Nerd Font 10
