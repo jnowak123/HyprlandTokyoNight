@@ -2,7 +2,9 @@
   "logo": {
     "type": "file",
     "source": "~/.config/fastfetch/logo.txt",
-    "color": "red"
+    "color": {
+      "1": "red"
+    }
   },
   "modules": [
     "break",
