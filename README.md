@@ -49,4 +49,12 @@ stow */
 
 ---
 
+## 🙏 Credits
+
+- **GTK Theme**: [Tokyonight-GTK-Theme](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme) by Fausto Korpsvart (colors customized to match Hyprland palette)
+- **Wallpapers**: [orangci/walls](https://github.com/orangci/walls)
+- **VSCodium Theme**: Tokyo Night by [enkia](https://github.com/enkia/tokyo-night-vscode-theme)
+
+---
+
 **Theme**: Tokyo Night | **Compositor**: Hyprland | **Terminal**: Kitty | **Bar**: Waybar | **Launcher**: Rofi | **Notifications**: Dunst
