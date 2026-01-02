@@ -1,4 +1,5 @@
 {
     "workbench.colorTheme": "Tokyo Night",
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false
 }
