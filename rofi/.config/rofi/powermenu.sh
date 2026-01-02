@@ -31,7 +31,7 @@ case $chosen in
         systemctl reboot
         ;;
     $lock)
-        hyprlock
+        hyprlock && ~/.config/hypr/scripts/wallpaper.sh
         ;;
     $suspend)
         systemctl suspend
