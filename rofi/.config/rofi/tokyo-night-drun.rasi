@@ -1,4 +1,4 @@
-/***** --- TOKYO NIGHT DRUN LAUNCHER (MATCHED) --- *****/
+/***** --- TOKYO NIGHT DRUN LAUNCHER --- *****/
 
 configuration {
     modi: "drun";
@@ -22,7 +22,7 @@ configuration {
 }
 
 window {
-    width: 500px;         /* Narrower for single column */
+    width: 500px;
     background-color: @bg;
     border: 2px;
     border-color: @accent;

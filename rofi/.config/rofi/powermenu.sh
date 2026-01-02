@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 
 # Options
 update='󰚰  Update'
@@ -12,7 +11,7 @@ logout='󰍃  Logout'
 # Rofi Command
 rofi_command="rofi -theme $HOME/.config/rofi/tokyo-night-power.rasi -i"
 
-# Variable passed to rofi (added $install here)
+# Variable passed to rofi
 options="$update\n$install\n$shutdown\n$reboot\n$lock\n$suspend\n$logout"
 
 chosen="$(echo -e "$options" | $rofi_command -dmenu -selected-row 0)"
@@ -31,6 +30,7 @@ case $chosen in
         systemctl reboot
         ;;
     $lock)
+        # Sets new background on lock
         hyprlock && ~/.config/hypr/scripts/wallpaper.sh
         ;;
     $suspend)
