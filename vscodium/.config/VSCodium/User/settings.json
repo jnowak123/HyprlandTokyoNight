@@ -1,5 +1,18 @@
 {
     "workbench.colorTheme": "Tokyo Night",
     "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "haskell.manageHLS": "GHCup",
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "editor.fontLigatures": true,
+    "codeium.enableConfig": {
+        "*": true,
+        "plaintext": true,
+        "dotenv": true,
+        "markdown": true,
+        "ignore": true,
+        "properties": true
+    },
+    "codeium.enableCodeLens": false,
+    "editor.fontSize": 13
 }
