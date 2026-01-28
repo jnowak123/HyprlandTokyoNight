@@ -1,46 +1,16 @@
 # Exit early if running non-interactively (e.g., in a script)
 [[ $- != *i* ]] && return
 
-# Enable colored output for ls and grep commands
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
+# Case-insensitive tab completion
+bind 'set completion-ignore-case on'
 
-# Custom prompt: current directory (blue) followed by $ (cyan)
-PS1="\[\e[1;34m\]\W \[\e[1;36m\]\$ \[\e[0m\]"
 
-# Add npm global binaries to PATH
-export PATH=$PATH:$HOME/.npm-global/bin
+# Source bash theme
+if [ -f ~/HyprlandTokyoNight/bash/theme.sh ]; then
+    . ~/HyprlandTokyoNight/bash/theme.sh
+fi
 
-# Overrides colors for NEWT apps, like nmtui
-export NEWT_COLORS='
-  root=#a9b1d6,#1a1b26
-  border=#7aa2f7,#1a1b26
-  window=#a9b1d6,#1a1b26
-  shadow=#414868,#1a1b26
-  title=#bb9af7,#1a1b26
-  button=#1a1b26,#7aa2f7
-  actbutton=#1a1b26,#7dcfff
-  compactbutton=#a9b1d6,#1a1b26
-  checkbox=#7dcfff,#1a1b26
-  actcheckbox=#1a1b26,#7dcfff
-  entry=#a9b1d6,#1a1b26
-  disentry=#414868,#1a1b26
-  label=#a9b1d6,#1a1b26
-  listbox=#a9b1d6,#1a1b26
-  actlistbox=#1a1b26,#7aa2f7
-  textbox=#a9b1d6,#1a1b26
-  acttextbox=#1a1b26,#7dcfff
-  helpline=#a9b1d6,#1a1b26
-  roottext=#7aa2f7,#1a1b26
-'
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# pnpm
-export PNPM_HOME="/home/jack/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
+# Source node setup
+if [ -f ~/HyprlandTokyoNight/bash/node-setup.sh ]; then
+    . ~/HyprlandTokyoNight/bash/node-setup.sh
+fi

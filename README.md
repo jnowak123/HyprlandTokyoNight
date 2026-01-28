@@ -55,18 +55,18 @@ stow */
 
 ## 🎨 Modified Applications
 
-| App			| Location						| Credits	|
-|---|---|---|
-| **Hyprland**	| `hyprland/.config/hypr/`		|			|
-| **Kitty**		| `kitty/.config/kitty/`		|			|
-| **Waybar**	| `waybar/.config/waybar/`		|			|
-| **Rofi**		| `rofi/.config/rofi/`			|			|
-| **Dunst**		| `dunst/.config/dunst/`		|			|
-| **Hypridle**	| `hypridle/.config/hypr/`		|			|
-| **VSCodium**	| `vscodium/.config/VSCodium/`	| [Tokyo Night Theme](https://github.com/enkia/tokyo-night-vscode-theme) by enkia (Customized to fully match palette)	|
-| **Bash**		| `bash/`						|			|
-| **GTK 3.0/4.0** | `gtk-3.0/`, `gtk-4.0/`		| [Tokyonight-GTK-Theme](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme) by Fausto Korpsvart	|
-| **FastFetch**	| `fastfetch/.config/`			| ASCII Art by Ooyamaneko	|
-| **NMTui**		| `nmtui/.local/`				|			|
-| **Wallpapers** | `wallpapers/.local/`			| [Walls](https://github.com/orangci/walls)	by orangci (Custom selection that matches theme)|
+| App			| Usage	| Location						| Credits	|
+|---|---|---|---|
+| **Hyprland**	| Window manager	| `hyprland/.config/hypr/`		|	|
+| **Kitty**		| Terminal	| `kitty/.config/kitty/`		|	|
+| **Waybar**	| Status bar	| `waybar/.config/waybar/`		|	|
+| **Rofi**		| Application launcher	| `rofi/.config/rofi/`			|	|
+| **Dunst**		| Notification daemon	| `dunst/.config/dunst/`		|	|
+| **Hypridle**	| Idle manager	| `hypridle/.config/hypr/`		|	|
+| **VSCodium**	| Code editor	| `vscodium/.config/VSCodium/`	| [Tokyo Night Theme](https://github.com/enkia/tokyo-night-vscode-theme) by enkia (Customized to fully match palette)	|
+| **Bash**		| Shell	| `bash/`						|	|
+| **GTK 3.0/4.0** | Theme	| `gtk-3.0/`, `gtk-4.0/`		| [Tokyonight-GTK-Theme](https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme) by Fausto Korpsvart	|
+| **FastFetch**	| System info	| `fastfetch/.config/`			| ASCII Art by Ooyamaneko	|
+| **NMTui**		| Network manager	| `nmtui/.local/`				|	|
+| **Wallpapers** | Wallpapers	| `wallpapers/.local/`			| [Walls](https://github.com/orangci/walls)	by orangci (Custom selection that matches theme)|
 
