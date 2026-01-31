@@ -1,8 +1,13 @@
 
 # For HyprlandTokyoNight Wallpapers, use /.local/share/TokyoNight-Wallpapers/
 DIR=$HOME/.local/share/Classic-Wallpapers/
-swww-daemon --format xrgb &
+pgrep -x swww-daemon > /dev/null || swww-daemon --format argb &
 sleep 0.5
 PICS=($DIR/*)
-RANDOM_PIC=${PICS[$RANDOM % ${#PICS[@]}]}
-swww img "$RANDOM_PIC" --transition-type simple
+if [[ ${#PICS[@]} -gt 0 && ! "${PICS[0]}" =~ \* ]]; then
+  RANDOM_PIC=${PICS[$RANDOM % ${#PICS[@]}]}
+  swww img "$RANDOM_PIC" --transition-type simple
+else
+  echo "Error: No wallpapers found in $DIR"
+  exit 1
+fi
