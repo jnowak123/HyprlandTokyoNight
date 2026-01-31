@@ -14,5 +14,6 @@
         "properties": true
     },
     "codeium.enableCodeLens": false,
-    "editor.fontSize": 13
+    "editor.fontSize": 13,
+    "git.confirmSync": false
 }

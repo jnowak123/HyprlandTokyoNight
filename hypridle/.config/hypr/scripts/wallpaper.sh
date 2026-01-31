@@ -1,5 +1,6 @@
 
-DIR=$HOME/.local/share/wallpapers/
+# For HyprlandTokyoNight Wallpapers, use /.local/share/TokyoNight-Wallpapers/
+DIR=$HOME/.local/share/Classic-Wallpapers/
 swww-daemon --format xrgb &
 sleep 0.5
 PICS=($DIR/*)
